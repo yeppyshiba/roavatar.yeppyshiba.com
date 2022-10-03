@@ -19,10 +19,10 @@
             "@enums/*": ["./enums/*"],
             "@hooks/*": ["./hooks/*"],
             "@i18n/*": ["./i18n/*"],
+            "@models/*": ["./models/*"],
             "@pages/*": ["./pages/*"],
             "@slices/*": ["./slices/*"],
-            "@stores/*": ["./stores/*"],
-            "@styles/*": ["./styles/*"]
+            "@stores/*": ["./stores/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
