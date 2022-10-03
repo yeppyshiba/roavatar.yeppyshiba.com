@@ -1,7 +1,9 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
+import Path from "@enums/Path";
 
 const Home: NextPage = () => {
     return (
@@ -36,9 +38,11 @@ const Home: NextPage = () => {
                             Roblox Avatar Maker
                         </Text>
                         <Stack direction={"row"} align={"center"}>
-                            <Button bg={"blue.400"} rounded={"full"} color={"white"} _hover={{ bg: "blue.500" }}>
-                                Generate
-                            </Button>
+                            <Link href={Path.ADD}>
+                                <Button bg={"blue.400"} rounded={"full"} color={"white"} _hover={{ bg: "blue.500" }}>
+                                    Generate
+                                </Button>
+                            </Link>
                         </Stack>
                     </Stack>
                 </VStack>
